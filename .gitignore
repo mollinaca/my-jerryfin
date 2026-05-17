@@ -1,0 +1,6 @@
+cache/*
+^cache/.gitkeep
+config/*
+^config/.gitkeep
+movies/*
+^movies/.gitkeep
