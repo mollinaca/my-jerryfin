@@ -1,6 +1,6 @@
-^cache/.gitkeep
 cache/*
-^config/.gitkeep
-config/*
-^movies/.gitkeep
 movies/*
+config/*
+!cache/.gitkeep
+!movies/.gitkeep
+!config/.gitkeep
