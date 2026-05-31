@@ -1,13 +1,13 @@
 services:
   jellyfin:
-    image: jellyfin/jellyfin:10.11.8 # 最新の安定バージョンを明示指定
+    image: jellyfin/jellyfin:10.11.8
     container_name: jellyfin
     user: "0:0"
     network_mode: "host"
     volumes:
       - ./config:/config
       - ./cache:/cache
-      - ./media:/media:ro # 同じ階層の movies フォルダをコンテナの /media にマウント
+      - /mnt/data/jerryfin-media/:/media:ro
     restart: unless-stopped
     environment:
       - TZ=Asia/Tokyo
